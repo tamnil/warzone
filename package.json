@@ -1,0 +1,45 @@
+{
+    "name": "warzone",
+    "description": "Warzone tests and develpment template",
+    "version": "0.0.0",
+    "contributors": [
+        "Tamnil Saito Junior <tamnil@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/tamnil/warzone.git"
+    },
+    "scripts": {
+        "lint": "node_modules/.bin/jshint ./lib --config ./.jshintrc",
+        "test": "node_modules/.bin/mocha test/*.*.js",
+        "build": "",
+        "coverage": "",
+        "test-unit": "mocha ./test/br/*.*.js",
+        "watch-test-br": "npm-watch test-br"
+    },
+    "watch": {
+        "test": {
+            "patterns": [
+                "**"
+            ],
+            "extensions": "js,jsx,json,ts",
+            "ignore": "node_modules/**",
+            "quiet": true,
+            "legacyWatch": true,
+            "delay": 500,
+            "runOnChangeOnly": false
+        }
+    },
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "jshint": "2.9.7",
+        "npm-watch": "^0.5.0",
+        "mocha": "^5.2.0",
+        "chai": "^4.2.0",
+        "sinon": "^7.2.2"
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {
+    }
+}
