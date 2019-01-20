@@ -15,7 +15,7 @@
         "build": "",
         "coverage": "",
         "test-unit": "mocha ./test/br/*.*.js",
-        "watch-test-br": "npm-watch test-br"
+        "watch-test": " npm-watch test"
     },
     "watch": {
         "test": {
