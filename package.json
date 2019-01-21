@@ -10,15 +10,27 @@
         "url": "http://github.com/tamnil/warzone.git"
     },
     "scripts": {
-        "lint": "node_modules/.bin/jshint ./lib --config ./.jshintrc",
+        "lint": "node_modules/.bin/jshint ./test/* *.js --config ./.jshintrc",
         "test": "node_modules/.bin/mocha test/*.*.js",
         "build": "",
         "coverage": "",
         "test-unit": "mocha ./test/br/*.*.js",
-        "watch-test": " npm-watch test"
+        "watch-test": " npm-watch test",
+        "watch-lint": " npm-watch lint"
     },
     "watch": {
         "test": {
+            "patterns": [
+                "**"
+            ],
+            "extensions": "js,jsx,json,ts",
+            "ignore": "node_modules/**",
+            "quiet": true,
+            "legacyWatch": true,
+            "delay": 500,
+            "runOnChangeOnly": false
+        },
+        "lint": {
             "patterns": [
                 "**"
             ],

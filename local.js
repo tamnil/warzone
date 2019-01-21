@@ -1,3 +1,3 @@
-var teste = 1234
+var teste = 1234;
 
-module.exports = teste
+module.exports = teste;
